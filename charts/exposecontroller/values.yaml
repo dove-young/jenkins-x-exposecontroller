@@ -2,6 +2,9 @@ Image: "gcr.io/jenkinsxio/exposecontroller"
 ImageTag: "latest"
 BackoffLimit: 5
 Annotations: {}
+config:
+  pathMode: "/jenkins"
+  http: false
   # use value of `path` to use path based ingress
 # config:
 #   pathMode: "path"
